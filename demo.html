@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+       <meta name="generator" content="Baru-Lab, barulab.com.br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demonstração – Acessibilidade Fácil - BARU LAB</title>
+  <style>
+    body { margin: 0; font-family: Georgia, serif; color: #333; background: #fafaf7; line-height: 1.6; }
+    header { background: #2d6a4f; color: #fff; padding: 24px 16px; }
+    header h1 { margin: 0; font-size: 28px; }
+    nav a { color: #d8f3dc; margin-right: 16px; }
+    main { max-width: 760px; margin: 0 auto; padding: 24px 16px; }
+    .card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 16px; margin: 16px 0; }
+    a { color: #2d6a4f; text-decoration: none; }
+    .pulse { display: inline-block; padding: 4px 10px; background: #f4a261; border-radius: 4px; animation: pulse 1.2s infinite alternate; }
+    @keyframes pulse { to { transform: scale(1.1); } }
+    small { font-size: 13px; color: #777; }
+    footer { text-align: center; padding: 24px; font-size: 14px; color: #666; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Exemplo BARU-LAB</h1>
+    <nav aria-label="Principal"><a href="#">Início</a><a href="#">Projetos</a><a href="#">Contato</a></nav>
+  </header>
+
+  <main>
+    <h2>Bem-vindo</h2>
+    <p>Esta é uma página de demonstração. Clique no botão de acessibilidade no canto da tela
+      (ou navegue com a tecla <kbd>Tab</kbd>) para testar os recursos. Ao carregar a página,
+      a primeira tecla <kbd>Tab</kbd> mostra o link <em>“Pular para o conteúdo”</em>.</p>
+
+    <div class="card">
+      <h3>Pães artesanais</h3>
+      <p>Projetos criados com inovação. <a href="#">Ver protifólio completo</a>.</p>
+      <p><span class="pulse">Novidade!</span> <small>Texto pequeno para testar o aumento de fonte.</small></p>
+    </div>
+
+    <div class="card">
+      <h3>Imagem colorida</h3>
+      <svg width="240" height="80" role="img" aria-label="Faixa de cores">
+        <rect width="80" height="80" fill="#e63946"/><rect x="80" width="80" height="80" fill="#2a9d8f"/><rect x="160" width="80" height="80" fill="#e9c46a"/>
+      </svg>
+    </div>
+
+    <div class="card">
+      <h3>Formulário</h3>
+      <label for="nome">Nome</label><br>
+      <input id="nome" type="text"> <button type="button">Enviar</button>
+    </div>
+  </main>
+
+  <footer>© BARU LAB Exemplo</footer>
+
+  <!-- Uma única linha instala a barra de acessibilidade -->
+  <script src="acessibilidade.js" data-position="bottom-right" data-color="#1a56db" data-lang="pt-BR" defer></script>
+</body>
+</html>
